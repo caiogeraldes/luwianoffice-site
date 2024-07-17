@@ -724,6 +724,10 @@ const luwian = (input) => {
   input = input.replace(/\./g, "𔖲");
   input = input.replace(/</g, "𔗎");
   input = input.replace(/>/g, "𔗏");
+
+  input = input.replace(/-/g, "");
+  input = input.replace(/=/g, "");
+
   return input;
 };
 export default luwian;
