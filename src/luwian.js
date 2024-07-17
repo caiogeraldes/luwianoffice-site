@@ -1,4 +1,7 @@
 const luwian = (input) => {
+  input = input.replace(/wa\/i/g, "wa");
+  input = input.replace(/ra\/i/g, "ra");
+  input = input.replace(/y/g, "i");
   input = input.replace(/\(DEUS\)MONS.MENSA/g, "𔕍");
   input = input.replace(/\(DEUS\)MONS.SARPA/g, "𔕍");
   input = input.replace(/\(DEUS\)VIA\+TERRA/g, "𔓧");
@@ -309,8 +312,8 @@ const luwian = (input) => {
   input = input.replace(/CAPUT/g, "𔐉");
   input = input.replace(/CASTRUM/g, "𔔉");
   input = input.replace(/CENTUM/g, "𔗃");
-  input = input.replace(/CERVUS3/g, "𔑵");
-  input = input.replace(/CERVUS2/g, "𔑴");
+  input = input.replace(/CERVUS2/g, "𔑵");
+  input = input.replace(/CERVUS3/g, "𔑴");
   input = input.replace(/CERVUS/g, "𔑳");
   input = input.replace(/CONTRACTUS/g, "𔖅");
   input = input.replace(/CORNU\+CAPUT/g, "𔙀");
@@ -368,6 +371,7 @@ const luwian = (input) => {
   input = input.replace(/FULGUR/g, "𔓣");
   input = input.replace(/FUSUS/g, "𔕗");
   input = input.replace(/GENUFLECTERE/g, "𔑞");
+  input = input.replace(/HALPA/g, "𔑞");
   input = input.replace(/GRYLLUS/g, "𔒑");
   input = input.replace(/HASTARIUS/g, "𔓈");
   input = input.replace(/HATTI\+LI/g, "𔓠");
@@ -717,10 +721,17 @@ const luwian = (input) => {
   input = input.replace(/5/g, "𔖼");
   input = input.replace(/8/g, "𔖽");
   input = input.replace(/9/g, "𔖿");
-  input = input.replace(/\./g, "𔖲");
+  input = input.replace(/'/g, "𔖲");
+  input = input.replace(/ "/g, " <");
+  input = input.replace(/^"/g, "<");
+  input = input.replace(/" /g, "> ");
+  input = input.replace(/"-/g, ">-");
+  input = input.replace(/"=/g, ">=");
+  input = input.replace(/"/g, ">");
   input = input.replace(/</g, "𔗎");
   input = input.replace(/>/g, "𔗏");
 
+  input = input.replace(/\./g, "");
   input = input.replace(/-/g, "");
   input = input.replace(/=/g, "");
 
