@@ -1,0 +1,3 @@
+[submodule "src/luwianoffice-js"]
+	path = src/luwianoffice-js
+	url = https://github.com/caiogeraldes/luwianoffice-js.git
