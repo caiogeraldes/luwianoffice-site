@@ -23,7 +23,7 @@ function App() {
 
 function TextIn() {
   return (
-    <div className="w-100">
+    <div className="w-100 text-xl">
       <div className="relative w-full">
         <textarea
           type="text"
@@ -41,7 +41,7 @@ function TextIn() {
 
 function TextOut() {
   return (
-    <div className="w-100">
+    <div className="w-100 text-6xl">
       <div className="relative w-full">
         <textarea
           type="text"
